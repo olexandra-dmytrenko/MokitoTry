@@ -7,6 +7,7 @@ import java.util.List;
 
 import static org.junit.Assert.assertEquals;
 import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.times;
 import static org.mockito.Mockito.verify;
 
 //Let's import Mockito statically so that the code looks clearer
@@ -54,7 +55,7 @@ public class MokitoVerify {
 
 
         //then
-        verify(mockedProject).addProject();
+        verify(mockedProject, times(2)).addProject();
         assertEquals(0, projects.size());
 
     }

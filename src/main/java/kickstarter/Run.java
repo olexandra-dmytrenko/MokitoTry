@@ -14,6 +14,7 @@ public class Run {
 
     public static List<Project> addProject(Project project) {
         List<Project> result = project.addProject();
+        result = project.addProject();
         return result;
     }
 }
